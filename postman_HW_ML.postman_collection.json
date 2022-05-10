@@ -1,0 +1,485 @@
+{
+	"info": {
+		"_postman_id": "c7ddda27-e0f5-4463-8e5d-66850b44b2d1",
+		"name": "postman_HW_ML",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "EP_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"let name = \"Anton\"; \r",
+							"pm.test(\"test_1\", function (){\r",
+							"    pm.expect(name).to.deep.equal(\"Anton\")\r",
+							"})\r",
+							"\r",
+							"let age = 33;\r",
+							"pm.test(\"test_2\", function (){\r",
+							"    pm.expect(age).to.deep.equal(33)\r",
+							"});\r",
+							"\r",
+							"let salary = 2500; \r",
+							"pm.test(\"test_3\", function (){\r",
+							"    pm.expect(salary).to.deep.equal(2500)\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "{{name}}",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "{{age}}",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "{{salary}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/user_info_3",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"user_info_3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_7",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"let name = \"Anton\"; \r",
+							"pm.test(\"test_1\", function (){\r",
+							"    pm.expect(name).to.deep.equal(\"Anton\")\r",
+							"})\r",
+							"\r",
+							"let age = 33;\r",
+							"pm.test(\"test_2\", function (){\r",
+							"    pm.expect(age).to.deep.equal(33)\r",
+							"});\r",
+							"\r",
+							"let salary = 2500; \r",
+							"pm.test(\"test_3\", function (){\r",
+							"    pm.expect(salary).to.deep.equal(2500)\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "{{name}}",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "{{age}}",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "{{salary}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/user_info_2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"user_info_2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"let name = \"Anton\"; \r",
+							"pm.test(\"test_1\", function (){\r",
+							"    pm.expect(name).to.deep.equal(\"Anton\")\r",
+							"})\r",
+							"\r",
+							"let age = 33;\r",
+							"pm.test(\"test_2\", function (){\r",
+							"    pm.expect(age).to.deep.equal(33)\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{url}}/get_method?name={{name}}&age={{age}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"get_method"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "{{name}}"
+						},
+						{
+							"key": "age",
+							"value": "{{age}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"let name = \"Anton\"; \r",
+							"pm.test(\"test_1\", function (){\r",
+							"    pm.expect(name).to.deep.equal(\"Anton\")\r",
+							"})\r",
+							"\r",
+							"let age = 33;\r",
+							"pm.test(\"test_2\", function (){\r",
+							"    pm.expect(age).to.deep.equal(33)\r",
+							"});\r",
+							"\r",
+							"let weight = 85;\r",
+							"pm.test(\"test_3\", function (){\r",
+							"    pm.expect(weight).to.deep.equal(85)\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{url}}/object_info_1?name={{name}}&age={{age}}&weight={{weight}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"object_info_1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "{{name}}"
+						},
+						{
+							"key": "age",
+							"value": "{{age}}"
+						},
+						{
+							"key": "weight",
+							"value": "{{weight}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"let name = \"Anton\"; \r",
+							"pm.test(\"test_1\", function (){\r",
+							"    pm.expect(name).to.deep.equal(\"Anton\")\r",
+							"})\r",
+							"\r",
+							"let age = 33;\r",
+							"pm.test(\"test_2\", function (){\r",
+							"    pm.expect(age).to.deep.equal(33)\r",
+							"});\r",
+							"\r",
+							"let salary = 2500; \r",
+							"pm.test(\"test_3\", function (){\r",
+							"    pm.expect(salary).to.deep.equal(2500)\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{url}}/object_info_2?name={{name}}&age={{age}}&salary={{salary}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"object_info_2"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "{{name}}"
+						},
+						{
+							"key": "age",
+							"value": "{{age}}"
+						},
+						{
+							"key": "salary",
+							"value": "{{salary}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"let name = \"Anton\"; \r",
+							"pm.test(\"test_1\", function (){\r",
+							"    pm.expect(name).to.deep.equal(\"Anton\")\r",
+							"})\r",
+							"\r",
+							"let age = 33;\r",
+							"pm.test(\"test_2\", function (){\r",
+							"    pm.expect(age).to.deep.equal(33)\r",
+							"});\r",
+							"\r",
+							"let salary = 2500; \r",
+							"pm.test(\"test_3\", function (){\r",
+							"    pm.expect(salary).to.deep.equal(2500)\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{url}}/object_info_3?name={{name}}&age={{age}}&salary={{salary}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"object_info_3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "{{name}}"
+						},
+						{
+							"key": "age",
+							"value": "{{age}}"
+						},
+						{
+							"key": "salary",
+							"value": "{{salary}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_6",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"let name = \"Anton\"; \r",
+							"pm.test(\"test_1\", function (){\r",
+							"    pm.expect(name).to.deep.equal(\"Anton\")\r",
+							"})\r",
+							"\r",
+							"let age = 33;\r",
+							"pm.test(\"test_2\", function (){\r",
+							"    pm.expect(age).to.deep.equal(33)\r",
+							"});\r",
+							"\r",
+							"let salary = 2500; \r",
+							"pm.test(\"test_3\", function (){\r",
+							"    pm.expect(salary).to.deep.equal(2500)\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{url}}/object_info_4?name={{name}}&age={{age}}&salary={{salary}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"object_info_4"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "{{name}}"
+						},
+						{
+							"key": "age",
+							"value": "{{age}}"
+						},
+						{
+							"key": "salary",
+							"value": "{{salary}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
